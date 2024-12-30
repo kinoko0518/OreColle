@@ -1,0 +1,98 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfdv3eyfb6ug2"]
+
+[ext_resource type="Script" uid="uid://bw5hfsgjd8lao" path="res://Scripts/Card.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://dxg7ewq701riu" path="res://Scripts/Hands.gd" id="2_0xm2m"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FieldScroll" type="ScrollContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0104167
+anchor_top = 0.0493827
+anchor_right = 0.990451
+anchor_bottom = 0.575617
+offset_bottom = 3.05176e-05
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Field" type="HBoxContainer" parent="FieldScroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 30
+metadata/_edit_use_anchors_ = true
+
+[node name="Card3" type="VBoxContainer" parent="FieldScroll/Field"]
+custom_minimum_size = Vector2(0, 265.485)
+layout_mode = 2
+script = ExtResource("1_0xm2m")
+rarelity = 1
+belongment = 1
+metadata/_custom_type_script = ExtResource("1_0xm2m")
+
+[node name="Card2" type="VBoxContainer" parent="FieldScroll/Field"]
+custom_minimum_size = Vector2(0, 265.485)
+layout_mode = 2
+script = ExtResource("1_0xm2m")
+rarelity = 2
+belongment = 1
+metadata/_custom_type_script = ExtResource("1_0xm2m")
+
+[node name="Hand" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchor_left = 1.0
+anchor_top = 0.910152
+anchor_right = 1.0
+anchor_bottom = 0.999999
+offset_left = -415.0
+offset_top = -345.779
+offset_bottom = 0.000366211
+rotation = 2.26893
+pivot_offset = Vector2(415, 404)
+script = ExtResource("2_0xm2m")
+metadata/_edit_use_anchors_ = true
+
+[node name="Card" type="VBoxContainer" parent="Hand"]
+custom_minimum_size = Vector2(0, 265.485)
+layout_mode = 0
+offset_left = 415.0
+offset_top = 404.0
+offset_right = 573.0
+offset_bottom = 669.485
+script = ExtResource("1_0xm2m")
+rarelity = 3
+metadata/_custom_type_script = ExtResource("1_0xm2m")
+
+[node name="Card2" type="VBoxContainer" parent="Hand"]
+custom_minimum_size = Vector2(0, 265.485)
+layout_mode = 0
+offset_left = 415.0
+offset_top = 404.0
+offset_right = 573.0
+offset_bottom = 669.485
+rotation = 0.349066
+script = ExtResource("1_0xm2m")
+rarelity = 1
+metadata/_custom_type_script = ExtResource("1_0xm2m")
+
+[node name="Card3" type="VBoxContainer" parent="Hand"]
+custom_minimum_size = Vector2(0, 265.485)
+layout_mode = 0
+offset_left = 415.0
+offset_top = 404.0
+offset_right = 501.0
+offset_bottom = 669.485
+rotation = 0.698132
+script = ExtResource("1_0xm2m")
+metadata/_custom_type_script = ExtResource("1_0xm2m")

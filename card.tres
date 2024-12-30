@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://hn7enes4n1vi"]
+
+[ext_resource type="Texture2D" uid="uid://pt3x06j1n8yp" path="res://Backgrounds/normal.png" id="1_uirs1"]
+
+[sub_resource type="Shader" id="Shader_hy6uu"]
+code = "shader_type canvas_item;
+
+uniform vec3 colour : source_color;
+uniform sampler2D background_tex;
+uniform float card_padding = 0.025;
+
+void fragment() {
+	vec4 card = texture(TEXTURE, UV * vec2(1.0+card_padding*2.0) - vec2(card_padding));
+	if (card_padding >= UV.x || card_padding >= UV.y || 1.0 - card_padding <= UV.x || 1.0 - card_padding <= UV.y) {
+		card.a = 0.0;
+	}
+	vec4 background = texture(background_tex, SCREEN_UV);
+	COLOR = mix(card, background * vec4(colour, 1.0), background.a - card.a);
+}"
+
+[resource]
+shader = SubResource("Shader_hy6uu")
+shader_parameter/colour = Color(0.215902, 0.215902, 0.215902, 1)
+shader_parameter/background_tex = ExtResource("1_uirs1")
+shader_parameter/card_padding = 0.025
