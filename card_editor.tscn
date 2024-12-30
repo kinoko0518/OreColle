@@ -1,0 +1,114 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1c8fn5si5uv6"]
+
+[ext_resource type="Material" uid="uid://hn7enes4n1vi" path="res://card.tres" id="1_1ex0x"]
+[ext_resource type="Texture2D" uid="uid://cvb0onv4kc5vp" path="res://Cards/メーデーシグナル・エトワール.jpg" id="2_k4bk8"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = ExtResource("1_1ex0x")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0199653
+anchor_top = 0.0432099
+anchor_right = 0.326525
+anchor_bottom = 0.939815
+offset_right = -3.05176e-05
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_k4bk8")
+expand_mode = 3
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+anchor_left = 0.335069
+anchor_top = 0.0432099
+anchor_right = 0.982639
+anchor_bottom = 0.939815
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "カードのタイプ："
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+selected = 0
+item_count = 2
+popup/item_0/text = "カード"
+popup/item_0/id = 1
+popup/item_1/text = "呪文"
+popup/item_1/id = 0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "カードのレアリティ："
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+selected = 0
+item_count = 4
+popup/item_0/text = "ノーマルカード"
+popup/item_0/id = 1
+popup/item_1/text = "切り札カード"
+popup/item_1/id = 0
+popup/item_2/text = "ボス切り札カード"
+popup/item_2/id = 2
+popup/item_3/text = "ボスレア"
+popup/item_3/id = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "ステータス(初期値)"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "HP："
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "防御力："
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "攻撃力："
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
