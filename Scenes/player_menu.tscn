@@ -1,0 +1,100 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfdv3eyfb6ug2"]
+
+[ext_resource type="Script" uid="uid://ceffqrc1gget7" path="res://Scripts/Player.gd" id="1_58evf"]
+[ext_resource type="Script" uid="uid://dxg7ewq701riu" path="res://Scripts/Hands.gd" id="2_0rfhs"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_58evf")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.853395
+anchor_right = 0.482639
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/separation = 10
+
+[node name="VBoxContainer2" type="HBoxContainer" parent="VBoxContainer3"]
+layout_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="VBoxContainer3/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Load Deck"
+
+[node name="Button2" type="Button" parent="VBoxContainer3/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Reset"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer3"]
+layout_mode = 2
+vertical_scroll_mode = 0
+
+[node name="VBoxContainer" type="HBoxContainer" parent="VBoxContainer3/ScrollContainer"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="VBoxContainer3/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "デッキ一覧："
+
+[node name="FieldScroll" type="ScrollContainer" parent="VBoxContainer3"]
+layout_mode = 2
+size_flags_vertical = 3
+vertical_scroll_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Field" type="HBoxContainer" parent="VBoxContainer3/FieldScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 30
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer3"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer3/HBoxContainer"]
+layout_mode = 2
+text = "HP："
+
+[node name="Hand" type="Control" parent="."]
+layout_mode = 1
+anchor_left = 1.0
+anchor_top = 0.910152
+anchor_right = 1.0
+anchor_bottom = 0.999999
+offset_left = -415.0
+offset_top = -345.779
+offset_bottom = 0.000366211
+rotation = -0.174533
+pivot_offset = Vector2(415, 404)
+script = ExtResource("2_0rfhs")
+metadata/_edit_use_anchors_ = true

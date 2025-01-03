@@ -1,16 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cfdv3eyfb6ug2"]
+[gd_scene load_steps=4 format=3 uid="uid://cfdv3eyfb6ug2"]
 
 [ext_resource type="Script" uid="uid://bw5hfsgjd8lao" path="res://Scripts/Card.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://ceffqrc1gget7" path="res://Scripts/Player.gd" id="1_bo1nx"]
 [ext_resource type="Script" uid="uid://dxg7ewq701riu" path="res://Scripts/Hands.gd" id="2_0xm2m"]
-[ext_resource type="Script" uid="uid://dwn4bv1t48hn7" path="res://Scripts/CardStatus.gd" id="2_h2yge"]
-[ext_resource type="Texture2D" uid="uid://d2bnierfk1p55" path="res://Cards/BitFish.png" id="3_1bvp3"]
-
-[sub_resource type="Resource" id="Resource_1bvp3"]
-script = ExtResource("2_h2yge")
-default_hp = 128
-card_texture = ExtResource("3_1bvp3")
-rarelity = 2
-metadata/_custom_type_script = ExtResource("2_h2yge")
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -19,22 +11,21 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_bo1nx")
+card_path = Array[String](["user://Cards/アルカヌム・アルカヌム/アルカヌム・アルカヌム.tres"])
 
 [node name="FieldScroll" type="ScrollContainer" parent="."]
-unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0104167
 anchor_top = 0.0493827
-anchor_right = 0.990451
-anchor_bottom = 0.575617
+anchor_right = 1.0
+anchor_bottom = 0.645062
 offset_bottom = 3.05176e-05
 grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="Field" type="HBoxContainer" parent="FieldScroll"]
-unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -42,7 +33,6 @@ theme_override_constants/separation = 30
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Control" parent="."]
-unique_name_in_owner = true
 layout_mode = 1
 anchor_left = 1.0
 anchor_top = 0.910152
@@ -57,12 +47,22 @@ script = ExtResource("2_0xm2m")
 metadata/_edit_use_anchors_ = true
 
 [node name="Card" type="VBoxContainer" parent="Hand"]
-custom_minimum_size = Vector2(0, 265.485)
 layout_mode = 0
-offset_left = 415.0
-offset_top = 404.0
-offset_right = 573.0
-offset_bottom = 669.485
+offset_right = 40.0
+offset_bottom = 40.0
 script = ExtResource("1_0xm2m")
-card_data = SubResource("Resource_1bvp3")
 metadata/_custom_type_script = ExtResource("1_0xm2m")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.853395
+anchor_right = 0.482639
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+metadata/_edit_use_anchors_ = true

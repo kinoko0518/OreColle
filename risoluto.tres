@@ -1,0 +1,48 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://bifdooar4hoa2"]
+
+[ext_resource type="FontFile" uid="uid://bekwbno0sg575" path="res://LINESeedJP_TTF_Eb.ttf" id="1_ak8v3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wbtki"]
+content_margin_top = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.393669, 0.508492, 3.85046e-07, 1)
+skew = Vector2(1, 0)
+border_width_left = 30
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ak8v3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cmvtf"]
+content_margin_left = 50.0
+content_margin_right = 50.0
+bg_color = Color(0.728112, 0.928526, 1.92523e-06, 1)
+draw_center = false
+skew = Vector2(1, 0)
+border_width_left = 20
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0u412"]
+content_margin_top = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.393669, 0.508492, 3.85046e-07, 1)
+skew = Vector2(1, 0)
+border_width_left = 30
+border_color = Color(0, 0, 0, 1)
+
+[resource]
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_disabled_color = Color(0, 0, 0, 0.5)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/font_sizes/font_size = 32
+Button/fonts/font = ExtResource("1_ak8v3")
+Button/styles/disabled = SubResource("StyleBoxFlat_wbtki")
+Button/styles/focus = SubResource("StyleBoxEmpty_ak8v3")
+Button/styles/hover = SubResource("StyleBoxFlat_cmvtf")
+Button/styles/normal = SubResource("StyleBoxFlat_cmvtf")
+Button/styles/pressed = SubResource("StyleBoxFlat_0u412")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 32
+Label/fonts/font = ExtResource("1_ak8v3")

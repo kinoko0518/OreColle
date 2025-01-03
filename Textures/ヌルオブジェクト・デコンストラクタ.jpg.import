@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvb0onv4kc5vp"
-path="res://.godot/imported/メーデーシグナル・エトワール.jpg-3c8abfe8ed356e97de8a8a04bb829dc1.ctex"
+uid="uid://icajt2rsh1c"
+path="res://.godot/imported/ヌルオブジェクト・デコンストラクタ.jpg-6875e573128d22067509d3904b49a36a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cards/メーデーシグナル・エトワール.jpg"
-dest_files=["res://.godot/imported/メーデーシグナル・エトワール.jpg-3c8abfe8ed356e97de8a8a04bb829dc1.ctex"]
+source_file="res://Textures/ヌルオブジェクト・デコンストラクタ.jpg"
+dest_files=["res://.godot/imported/ヌルオブジェクト・デコンストラクタ.jpg-6875e573128d22067509d3904b49a36a.ctex"]
 
 [params]
 

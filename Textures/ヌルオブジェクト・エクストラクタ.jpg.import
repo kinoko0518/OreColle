@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blb5p1bqut3g3"
-path="res://.godot/imported/蛇路.png-615d9ba7e5f79c08465c7872b926fc89.ctex"
+uid="uid://csv7msonh0blk"
+path="res://.godot/imported/ヌルオブジェクト・エクストラクタ.jpg-cd1b03af92b219e501e283658aba9f79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cards/蛇路.png"
-dest_files=["res://.godot/imported/蛇路.png-615d9ba7e5f79c08465c7872b926fc89.ctex"]
+source_file="res://Textures/ヌルオブジェクト・エクストラクタ.jpg"
+dest_files=["res://.godot/imported/ヌルオブジェクト・エクストラクタ.jpg-cd1b03af92b219e501e283658aba9f79.ctex"]
 
 [params]
 

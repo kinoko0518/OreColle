@@ -1,0 +1,117 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1c8fn5si5uv6"]
+
+[ext_resource type="Script" uid="uid://cftmd8aga3s3s" path="res://Scripts/card_editor.gd" id="1_3g241"]
+[ext_resource type="Material" uid="uid://hn7enes4n1vi" path="res://card.tres" id="1_bxjrs"]
+[ext_resource type="Texture2D" uid="uid://cvb0onv4kc5vp" path="res://Cards/メーデーシグナル・エトワール.jpg" id="2_3g241"]
+[ext_resource type="Script" uid="uid://buxnbo1832moj" path="res://Scripts/status.gd" id="3_pf1jc"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3g241")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0138889
+anchor_right = 0.320313
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer2"]
+material = ExtResource("1_bxjrs")
+layout_mode = 2
+texture = ExtResource("2_3g241")
+expand_mode = 5
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+text = "Load Image"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+anchor_left = 0.335069
+anchor_top = 0.0432099
+anchor_right = 0.982639
+anchor_bottom = 0.939815
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "名前："
+
+[node name="Button" type="LineEdit" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "カードテンプレート："
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+selected = 0
+item_count = 2
+popup/item_0/text = "ポーン"
+popup/item_0/id = 1
+popup/item_1/text = "スペル"
+popup/item_1/id = 0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "カードのレアリティ："
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+selected = 0
+item_count = 4
+popup/item_0/text = "ノーマルカード"
+popup/item_0/id = 1
+popup/item_1/text = "切り札カード"
+popup/item_1/id = 0
+popup/item_2/text = "ボス切り札カード"
+popup/item_2/id = 2
+popup/item_3/text = "ボスレア"
+popup/item_3/id = 3
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "ステータス(初期値)"
+
+[node name="Status" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+script = ExtResource("3_pf1jc")
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "ステータスを追加"
+
+[node name="FileDialog" type="FileDialog" parent="."]
+title = "Open a File"
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.png", "*.jpg", "*jpeg")
+option_count = 1
+use_native_dialog = true

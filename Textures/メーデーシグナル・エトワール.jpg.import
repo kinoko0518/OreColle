@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m45q88f68ajp"
-path="res://.godot/imported/カッシウス・リンク.jpg-103574ab176eaf6cdd1739231e769d46.ctex"
+uid="uid://cvb0onv4kc5vp"
+path="res://.godot/imported/メーデーシグナル・エトワール.jpg-4e18424c8b8136a18a16be333b9d999b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cards/カッシウス・リンク.jpg"
-dest_files=["res://.godot/imported/カッシウス・リンク.jpg-103574ab176eaf6cdd1739231e769d46.ctex"]
+source_file="res://Textures/メーデーシグナル・エトワール.jpg"
+dest_files=["res://.godot/imported/メーデーシグナル・エトワール.jpg-4e18424c8b8136a18a16be333b9d999b.ctex"]
 
 [params]
 

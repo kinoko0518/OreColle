@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://icajt2rsh1c"
-path="res://.godot/imported/ヌルオブジェクト・デコンストラクタ.jpg-a861ac98a679bbf4d0cb86a5b950a048.ctex"
+uid="uid://d2bnierfk1p55"
+path="res://.godot/imported/BitFish.png-2234c080965067f8d727ce88b0d7a6f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cards/ヌルオブジェクト・デコンストラクタ.jpg"
-dest_files=["res://.godot/imported/ヌルオブジェクト・デコンストラクタ.jpg-a861ac98a679bbf4d0cb86a5b950a048.ctex"]
+source_file="res://Textures/BitFish.png"
+dest_files=["res://.godot/imported/BitFish.png-2234c080965067f8d727ce88b0d7a6f8.ctex"]
 
 [params]
 

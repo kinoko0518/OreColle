@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csv7msonh0blk"
-path="res://.godot/imported/ヌルオブジェクト・エクストラクタ.jpg-a4eb936dc43a820955f4350e426fb149.ctex"
+uid="uid://cbfcw3k8jdklh"
+path="res://.godot/imported/DSC_0109~2.jpg-05e13717a4bb10ac15dd5f651f4bf6af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cards/ヌルオブジェクト・エクストラクタ.jpg"
-dest_files=["res://.godot/imported/ヌルオブジェクト・エクストラクタ.jpg-a4eb936dc43a820955f4350e426fb149.ctex"]
+source_file="res://Textures/DSC_0109~2.jpg"
+dest_files=["res://.godot/imported/DSC_0109~2.jpg-05e13717a4bb10ac15dd5f651f4bf6af.ctex"]
 
 [params]
 

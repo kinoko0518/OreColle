@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbfcw3k8jdklh"
-path="res://.godot/imported/DSC_0109~2.jpg-100cacb7c095d21b94cec3af56317a39.ctex"
+uid="uid://m45q88f68ajp"
+path="res://.godot/imported/カッシウス・リンク.jpg-2e52b1bb2a849050c66e881a1df308de.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cards/DSC_0109~2.jpg"
-dest_files=["res://.godot/imported/DSC_0109~2.jpg-100cacb7c095d21b94cec3af56317a39.ctex"]
+source_file="res://Textures/カッシウス・リンク.jpg"
+dest_files=["res://.godot/imported/カッシウス・リンク.jpg-2e52b1bb2a849050c66e881a1df308de.ctex"]
 
 [params]
 

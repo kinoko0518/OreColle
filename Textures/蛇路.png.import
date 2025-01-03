@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8db587cdtb2e"
-path="res://.godot/imported/アルカヌム・アルカヌム.jpg-e1bb4187c0a1553466999d77037307bb.ctex"
+uid="uid://blb5p1bqut3g3"
+path="res://.godot/imported/蛇路.png-41e7981d7b17fa1670b95060ca13aa5e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cards/アルカヌム・アルカヌム.jpg"
-dest_files=["res://.godot/imported/アルカヌム・アルカヌム.jpg-e1bb4187c0a1553466999d77037307bb.ctex"]
+source_file="res://Textures/蛇路.png"
+dest_files=["res://.godot/imported/蛇路.png-41e7981d7b17fa1670b95060ca13aa5e.ctex"]
 
 [params]
 
